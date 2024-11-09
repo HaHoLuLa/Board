@@ -1,0 +1,520 @@
+@import url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css");
+
+/* @import '~react-quill/dist/quill.snow.css'; */
+@font-face {
+  font-family: 'D2Coding';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @font-face {
+      font-family: 'Dovemayo_gothic';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    } */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  /* 스크롤바의 너비 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--theme-color);
+  /* 스크롤바의 색상 */
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  /* background: rgba(49, 51, 56, 0.3); */
+  background: rgba(0, 0, 0, 0.2);
+  /*스크롤바 뒷 배경 색상*/
+}
+
+::selection {
+  color: white;
+  background-color: var(--theme-color);
+}
+
+* {
+  font-family: "Wanted Sans Variable", "Wanted Sans", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  /* font-family: 'Dovemayo_gothic'; */
+}
+
+header {
+  margin: 0 auto;
+  width: 65%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* transition: width 0.3s ease-out; */
+}
+
+.logo>a {
+  color: black;
+  text-decoration: none;
+}
+
+.logo>a:visited {
+  color: black;
+}
+
+.logo>a:hover,
+.logo>a:focus {
+  color: black;
+}
+
+.top-nav>a {
+  color: black;
+  text-decoration: none;
+}
+
+.top-nav>a:visited {
+  color: black;
+}
+
+.top-nav>a:hover,
+.top-nav>a:focus {
+  color: black;
+}
+
+main {
+  margin: 0 auto;
+  width: 65%;
+  /* transition: width 0.3s ease-out; */
+}
+
+.board a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+}
+
+.board a:visited {
+  color: darkgray;
+  text-decoration: underline;
+}
+
+.board a:hover,
+a:focus {
+  color: var(--theme-color);
+}
+
+.pagenation {
+  width: 20%;
+  margin: 20px auto 50px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.pagenation a {
+  text-align: center;
+  width: 10%;
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease-out;
+  /* border: solid 1px black; */
+}
+
+.pagenation a:hover {
+  color: var(--theme-color);
+}
+
+.top-nav {
+  display: flex;
+}
+
+.top-nav>p {
+  margin-left: 10px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title>p {
+  color: var(--theme-color);
+  margin-left: 5px;
+}
+
+.center-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.center-nav>div {
+  border: solid 1px #cccccc;
+  border-radius: 20px;
+  padding: 3px 10px;
+}
+
+.center-nav input {
+  border: none;
+}
+
+.center-nav input:focus {
+  outline: none;
+}
+
+.center-nav>div>button {
+  border: none;
+  background: none;
+}
+
+/* .center-nav>button {
+  color: white;
+  border: none;
+  background: var(--theme-color);
+  padding: 5px 10px;
+  border-radius: 15px;
+} */
+
+.center-nav>div {
+  margin-right: 2px;
+}
+
+/* .board>table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.board>tr,
+td,
+th {
+  border-bottom: solid 1px #cccccc;
+  text-align: center;
+  padding: 5px;
+}
+
+.board>table>thead>tr>th:first-child,
+.board>table>tbody>tr>td:first-child {
+  width: 10%;
+}
+
+.board>table>thead>tr>th:nth-child(2),
+.board>table>tbody>tr>td:nth-child(2) {
+  width: 50%;
+}
+
+.board>table>tbody>tr>td:nth-child(2) {
+  text-align: left;
+}
+
+.board>table>thead>tr>th:nth-child(3),
+.board>table>tbody>tr>td:nth-child(3) {
+  width: 10%;
+}
+
+.board>table>thead>tr>th:nth-child(4),
+.board>table>tbody>tr>td:nth-child(4) {
+  width: 25%;
+} */
+
+/* tr, td, th {
+      font-size: max(1vw, 14px)
+    } */
+
+.thead {
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: solid 1px #cccccc;
+}
+
+.thead>span,
+.tbody>span {
+  padding: 5px;
+}
+
+.thead>span:nth-child(1) {
+  width: 10%;
+}
+
+.thead>span:nth-child(2) {
+  width: 50%;
+}
+
+.thead>span:nth-child(3) {
+  width: 10%;
+}
+
+.thead>span:nth-child(4) {
+  width: 25%;
+}
+
+.thead>span:nth-child(5) {
+  width: 5%;
+}
+
+.tbody {
+  display: flex;
+  text-align: center;
+  border-bottom: solid 1px #cccccc;
+}
+
+.tbody>span:nth-child(1) {
+  width: 10%;
+}
+
+.tbody>span:nth-child(2) {
+  width: 50%;
+  text-align: left;
+}
+
+.tbody>span:nth-child(3) {
+  width: 10%;
+}
+
+.tbody>span:nth-child(4) {
+  width: 25%;
+}
+
+.tbody>span:nth-child(5) {
+  width: 5%;
+}
+
+.button-design {
+  color: white;
+  border: none;
+  background: var(--theme-color);
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.title-inp {
+  width: 100%;
+  box-sizing: border-box;
+  border: solid 1px #cccccc;
+  border-bottom: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 12px 15px
+}
+
+.title-inp::placeholder {
+  font-style: italic;
+}
+
+.title-inp:focus {
+  outline: none;
+}
+
+.login-box {
+  margin: 0 auto;
+  width: 50%;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box>form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-box>form>input {
+  border-radius: 15px;
+  border: solid 0.5px #cccccc;
+  padding: 5px 10px;
+  font-family: "FontAwesome";
+  margin-bottom: 10px;
+}
+
+.login-box>form>input:focus {
+  outline: none;
+}
+
+.button-box {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+
+.ql-syntax, .ql-snow .ql-editor pre.ql-syntax {
+  padding: 10px !important;
+  border-radius: 5px !important;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+  font-family: 'D2Coding' !important;
+  color: white !important;
+  background-color: #23241f !important;
+  /* white-space: pre-wrap; */
+  overflow-x: auto !important;
+}
+
+[class^="hljs"] {
+  font-family: 'D2Coding';
+}
+
+.ql-editor {
+  border-radius: 10px;
+}
+.ql-container.ql-snow > .ql-editor {
+  max-height: 40vh;
+  overflow-y: auto;
+  /* scroll-behavior: smooth; */
+}
+
+.ql-container {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: height 0.3s ease-out;
+}
+
+.ql-editor blockquote {
+  border-left: 5px solid var(--theme-color) !important;
+  padding-left: 20px !important;
+}
+
+.ql-editor img {
+  max-width: 100%;
+}
+
+.ql-editor a {
+  color: var(--theme-color);
+}
+
+.ql-editor a:visited {
+  color: darkgray;
+}
+
+.ql-editor ol,
+.ql-editor ul {
+  padding-left: 0 !important;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between
+}
+
+.info>div {
+  display: flex;
+}
+
+.info>div>p:first-child {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1500px) {
+
+  header,
+  main {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  /* header,
+  main {
+    width: 95%;
+  } */
+
+  /* .center-nav {
+    justify-content: space-between;
+  } */
+
+  .info {
+    flex-direction: column;
+  }
+
+  .info>p {
+    margin-bottom: 5px;
+  }
+
+  .info>div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .info>div>p {
+    margin-top: 5px;
+  }
+
+  .pagenation {
+    width: 70%;
+  }
+
+  .pagenation a {
+    width: 20%;
+  }
+
+  /* .board>table>thead>tr>th {
+    display: none;
+  }
+
+  .board>table>tbody>tr>td:first-child {
+    display: none;
+  }
+
+  .board>table>thead>tr>th:nth-child(2),
+  .board>table>tbody>tr>td:nth-child(2) {
+    width: 30%;
+  }
+
+  .board>table>thead>tr>th:last-child,
+  .board>table>tbody>tr>td:last-child {
+    display: none;
+  } */
+
+  .thead {
+    display: none;
+  }
+
+  .tbody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .table>a:nth-child(2)>.tbody {
+    border-top: solid 1px #cccccc;
+  }
+
+  .tbody>span:nth-child(1) {
+    display: none;
+  }
+
+  .tbody>span:nth-child(2) {
+    width: 100%;
+  }
+
+  .tbody>span:nth-child(3) {
+    /* text-align: left;
+    width: 50%; */
+    width: auto;
+  }
+
+  .tbody>span:nth-child(4) {
+    /* justify-content: flex-end; */
+    width: auto;
+  }
+
+  .tbody>span:nth-child(5) {
+    display: none;
+    /* justify-content: flex-end; */
+  }
+
+  /* .ql-container.ql-snow > .ql-editor {
+    max-height: 30vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  } */
+
+  /* .tbody > span:nth-child(5)::before {
+    content: "조회수 ";
+  } */
+}
